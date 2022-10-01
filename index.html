@@ -32,7 +32,7 @@
           </nav>
           <!-- </nav> -->
           <ul class="header-flex__nav-element">
-            <li class="">
+            <li>
               <a
                 class="links header-flex__nav-element--links-contact"
                 href="mailto:info@devstudio.com"
@@ -51,6 +51,13 @@
                 +48 111 111 111</a
               >
             </li>
+            <li>
+              <button type="menu" class="links header-flex__nav-element--mobile-menu">
+                <svg viewbox="0 0 01 1" height="40px">
+                  <use href="images/icons.svg#icon-menu-icon"></use>
+                </svg>
+              </button>
+            </li>
           </ul>
         </div>
       </div>
@@ -62,54 +69,52 @@
           Zamów usługe
         </button>
       </div>
-      <section class="container lorem-section">
-        <ul class="not-dot lorem-section__icon">
-          <li class="lorem-section__icon--box">
-            <svg height="70px" width="70px">
-              <use href="images/icons.svg#icon-antenna"></use>
-            </svg>
-          </li>
-          <li class="lorem-section__icon--box">
-            <svg height="70px" width="70px">
-              <use href="images/icons.svg#icon-clock"></use>
-            </svg>
-          </li>
-          <li class="lorem-section__icon--box">
-            <svg height="70px" width="70px">
-              <use href="images/icons.svg#icon-diagram"></use>
-            </svg>
-          </li>
-          <li class="lorem-section__icon--box">
-            <svg height="70px" width="70px">
-              <use href="images/icons.svg#icon-astronaut"></use>
-            </svg>
-          </li>
-        </ul>
-        <ul class="not-dot list-lorem">
-          <li class="list-lorem__item">
-            <h3 class="list-lorem__item--heading-text">LOREM IPSUM</h3>
-            <p class="list-lorem__item--text">
+      <section class="container">
+        <ul class="not-dot lorem-section">
+          <li class="lorem-section__icon">
+            <div class="lorem-section__icon--box">
+              <svg height="70px" width="70px">
+                <use href="images/icons.svg#icon-antenna"></use>
+              </svg>
+            </div>
+            <h3 class="lorem-section__item--heading-text">LOREM IPSUM</h3>
+            <p class="lorem-section__item--text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
               sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li class="list-lorem__item">
-            <h3 class="list-lorem__item--heading-text">LOREM IPSUM</h3>
-            <p class="list-lorem__item--text">
+          <li class="lorem-section__icon">
+            <div class="lorem-section__icon--box">
+              <svg height="70px" width="70px">
+                <use href="images/icons.svg#icon-clock"></use>
+              </svg>
+            </div>
+            <h3 class="lorem-section__item--heading-text">LOREM IPSUM</h3>
+            <p class="lorem-section__item--text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
               sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li class="list-lorem__item">
-            <h3 class="list-lorem__item--heading-text">LOREM IPSUM</h3>
-            <p class="list-lorem__item--text">
+          <li class="lorem-section__icon">
+            <div class="lorem-section__icon--box">
+              <svg height="70px" width="70px">
+                <use href="images/icons.svg#icon-diagram"></use>
+              </svg>
+            </div>
+            <h3 class="lorem-section__item--heading-text">LOREM IPSUM</h3>
+            <p class="lorem-section__item--text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
               sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li class="list-lorem__item">
-            <h3 class="list-lorem__item--heading-text">LOREM IPSUM</h3>
-            <p class="list-lorem__item--text">
+          <li class="lorem-section__icon">
+            <div class="lorem-section__icon--box">
+              <svg height="70px" width="70px">
+                <use href="images/icons.svg#icon-astronaut"></use>
+              </svg>
+            </div>
+            <h3 class="lorem-section__item--heading-text">LOREM IPSUM</h3>
+            <p class="lorem-section__item--text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
               sodales dui. Interdum et malesuada
             </p>
@@ -433,7 +438,8 @@
                 <svg class="modal__svg" viewBox="0 0 18 18" height="30px" width="30px">
                   <use href="images\icons.svg#icon-person-icon"></use>
                 </svg>
-                <input class="input-focus modal__input"
+                <input
+                  class="input-focus modal__input"
                   type="text"
                   name="imie"
                   required
@@ -446,7 +452,8 @@
                 <svg class="modal__svg" viewBox="0 0 18 18" height="30px" width="30px">
                   <use href="images\icons.svg#icon-phone-icon"></use>
                 </svg>
-                <input class="input-focus modal__input"
+                <input
+                  class="input-focus modal__input"
                   type="tel"
                   name="telefon"
                   required
@@ -456,14 +463,15 @@
               </label>
               <label class="input-focus modal__label">
                 Email
-                <svg class="modal__svg " viewBox="0 0 18 18" height="30px" width="30px">
+                <svg class="modal__svg" viewBox="0 0 18 18" height="30px" width="30px">
                   <use href="images\icons.svg#icon-email-icon"></use>
                 </svg>
                 <input class="input-focus modal__input" type="email" name="email" required />
               </label>
               <label class="input-focus">
                 Komentarz
-                <textarea class="input-focus modal__textarea"
+                <textarea
+                  class="input-focus modal__textarea"
                   name="komentarz"
                   id=""
                   cols="30"
@@ -473,11 +481,17 @@
               </label>
             </li>
             <li>
-              <input class="check-off" type="checkbox" id="regulations" required title="Pole wymagane" />
+              <input
+                class="check-off"
+                type="checkbox"
+                id="regulations"
+                required
+                title="Pole wymagane"
+              />
               <label class="check" for="regulations">
-                  <svg class="check__svg" for="regulations">
-                    <use href="images\icons.svg#icon-check-icon"></use>
-                  </svg>
+                <svg class="check__svg" for="regulations">
+                  <use href="images\icons.svg#icon-check-icon"></use>
+                </svg>
                 <p class="check-text">
                   Oświadczam iż akceptuję
                   <a class="links-modal" href="Regulamin"> Regulamin</a>

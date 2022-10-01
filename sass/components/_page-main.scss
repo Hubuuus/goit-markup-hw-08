@@ -17,7 +17,7 @@ $transition-brand: 250ms cubic-bezier(0.4, 0, 0.2, 1);
       rgba(44, 44, 44, 0.2) 65%,
       rgba(44, 44, 44, 0.7) 100%
     ),
-    url("../images/background.png");
+    url("../images/background.jpg");
   background-repeat: repeat;
   background-position: center;
   max-width: 1600vw;
@@ -54,30 +54,27 @@ $transition-brand: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .lorem-section {
   margin-top: 94px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
   &__icon {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 30px;
+    flex-direction: column;
+    width: 270px;
     &--box {
       width: 270px;
       height: 120px;
       background: $background-button-color;
       border-radius: 4px;
       margin-bottom: 30px;
+      margin-top: 30px;
       display: flex;
       justify-content: center;
       align-items: center;
     }
   }
-}
-
-.list-lorem {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
   &__item {
-    width: 270px;
     &--heading-text {
       font-weight: 700;
       font-size: 14px;
@@ -132,7 +129,7 @@ $transition-brand: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .background-our-team {
   background: $background-button-color;
-  min-width: 100%;
+  min-width: 100vw;
 }
 .our-team {
   font-weight: 700;
