@@ -12,17 +12,16 @@ body {
   font-weight: 500;
   color: $item-gray;
 }
-// meddai to desktop
-@media screen and (min-width: 1200px) {
+
+// media to mobile
+@media screen and (max-width: 768px) {
   .container {
     box-sizing: border-box;
-    width: 1200px;
+    min-width: 320px;
+    max-width: 480px;
     margin: auto;
     padding-left: 15px;
     padding-right: 15px;
-  }
-  .section {
-    padding: 94px 0px;
   }
 }
 // media to tablet
@@ -38,15 +37,18 @@ body {
     padding: 60px 0px;
   }
 }
-// media to mobile 
-@media screen and (max-width: 768px) {
+
+// media to desktop
+@media screen and (min-width: 1200px) {
   .container {
     box-sizing: border-box;
-    min-width: 320px;
-    max-width: 480px;
+    width: 1200px;
     margin: auto;
     padding-left: 15px;
     padding-right: 15px;
+  }
+  .section {
+    padding: 94px 0px;
   }
 }
 

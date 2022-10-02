@@ -5,15 +5,13 @@ $background-footer-social-icon: #ffffff1a;
 // to mobile
 .footer-background {
   background-color: $brand-background-color;
-  width: 100%;
+  width: 100vw;
   height: 603px;
 }
 
 // media to tablet
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) {
   .footer-background {
-    background-color: $brand-background-color;
-    width: 100%;
     height: 463px;
   }
 }
@@ -21,51 +19,38 @@ $background-footer-social-icon: #ffffff1a;
 // media to desktop
 @media screen and (min-width: 1200px) {
   .footer-background {
-    background-color: $brand-background-color;
-    width: 100%;
     height: 252px;
   }
 }
 
 // media to mobile
-@media screen and (max-width: 768px) {
-  .footer {
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    justify-content: center;
-    &__first-item {
-      text-align: center;
-      padding-top: 60px;
-    }
-    &__second-item {
-      padding-top: 60px;
-    }
-    &__third-item {
-      padding-top: 60px;
-    }
+.footer {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  justify-content: center;
+  &__first-item {
+    text-align: center;
+    padding-top: 60px;
+  }
+  &__second-item {
+    padding-top: 60px;
+  }
+  &__third-item {
+    padding-top: 60px;
   }
 }
 
 // media to tablet
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) {
   .footer {
-    display: flex;
     flex-direction: row;
-    box-sizing: border-box;
     flex-wrap: wrap;
-    justify-content: center;
     &__first-item {
-      text-align: center;
-      padding-top: 60px;
       margin-right: 144px;
-      // min-width: 246px;
     }
     &__second-item {
       padding-top: 65px;
-    }
-    &__third-item {
-      padding-top: 60px;
     }
   }
 }
@@ -73,11 +58,8 @@ $background-footer-social-icon: #ffffff1a;
 // media to desktop
 @media screen and (min-width: 1200px) {
   .footer {
-    display: flex;
     flex-direction: row;
-    box-sizing: border-box;
     &__first-item {
-      padding-top: 60px;
       margin-right: 70px;
       min-width: 246px;
     }
@@ -113,114 +95,72 @@ $background-footer-social-icon: #ffffff1a;
 }
 
 // media to mobile and tablet
-@media screen and (max-width: 1200px) {
-  .footer-heading {
-    color: $text-on-dark-background;
-    font-family: Roboto;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-align: left;
-    text-align: center;
-  }
+.footer-heading {
+  color: $text-on-dark-background;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-align: center;
 }
-
 // media to desktop
 @media screen and (min-width: 1200px) {
   .footer-heading {
-    color: $text-on-dark-background;
-    font-family: Roboto;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 16px;
-    letter-spacing: 0.03em;
     text-align: left;
   }
 }
 
 // media to mobile and tablet
-@media screen and (max-width: 1200px) {
-  .footer-form {
-    &__submit {
+.footer-form {
+  &__submit {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 20px;
+    &--input {
+      box-sizing: border-box;
+      width: 358px;
+      height: 50px;
+      background-color: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+      border-radius: 4px;
+      color: var(--text-on-dark-background);
+      padding-left: 16px;
+      &:required {
+        background-color: var(--brand-background-color);
+      }
+    }
+    &--button {
+      background: $brand-color;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 4px;
+      width: 200px;
+      height: 50px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.88;
+      letter-spacing: 0.06em;
+      color: $text-on-dark-background;
       display: flex;
       align-items: center;
-      flex-direction: column;
-      gap: 30px;
-      padding-top: 20px;
-      &--input {
-        box-sizing: border-box;
-        width: 358px;
-        height: 50px;
-        background-color: transparent;
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-        border-radius: 4px;
-        color: var(--text-on-dark-background);
-        padding-left: 16px;
-        &:required {
-          background-color: var(--brand-background-color);
-        }
-      }
-      &--button {
-        background: $brand-color;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 4px;
-        width: 200px;
-        height: 50px;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1.88;
-        letter-spacing: 0.06em;
-        color: $text-on-dark-background;
-        display: flex;
-        align-items: center;
-        gap: 24px;
-        padding-left: 42px;
-        fill: $text-on-dark-background;
-      }
+      gap: 24px;
+      padding-left: 42px;
+      fill: $text-on-dark-background;
     }
   }
 }
-
 // media to desktop
 @media screen and (min-width: 1200px) {
   .footer-form {
     &__submit {
-      display: flex;
+      flex-direction: row;
       align-items: flex-end;
       gap: 12px;
-      padding-top: 20px;
-      &--input {
-        box-sizing: border-box;
-        width: 358px;
-        height: 50px;
-        background-color: transparent;
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-        border-radius: 4px;
-        color: var(--text-on-dark-background);
-        padding-left: 16px;
-        &:required {
-          background-color: var(--brand-background-color);
-        }
-      }
       &--button {
-        background: $brand-color;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 4px;
-        width: 200px;
-        height: 50px;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1.88;
-        letter-spacing: 0.06em;
-        color: $text-on-dark-background;
         display: flex;
-        align-items: center;
-        gap: 24px;
-        padding-left: 42px;
-        fill: $text-on-dark-background;
       }
     }
   }
@@ -230,4 +170,3 @@ $background-footer-social-icon: #ffffff1a;
   fill: $text-on-dark-background;
   background-color: $background-footer-social-icon;
 }
-
