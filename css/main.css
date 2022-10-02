@@ -289,8 +289,8 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  width: 365px;
-  height: 84px;
+  max-width: 365px;
+  height: auto;
   color: #ffffff;
   margin-bottom: 30px;
 }
