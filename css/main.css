@@ -253,7 +253,7 @@ img {
   background-repeat: repeat;
   background-position: center;
   background-size: cover;
-  max-width: 100vw;
+  max-width: 100%;
   height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -486,7 +486,7 @@ img {
 }
 .background-our-team {
   background: #f5f4fa;
-  min-width: 100vw;
+  min-width: 100%;
 }
 
 .our-team {

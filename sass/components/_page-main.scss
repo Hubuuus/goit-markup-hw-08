@@ -28,7 +28,7 @@ $shadow-background: linear-gradient(
   background-repeat: repeat;
   background-position: center;
   background-size: cover;
-  max-width: 100vw;
+  max-width: 100%;
   height: 400px;
   display: flex;
   flex-direction: column;
@@ -209,7 +209,7 @@ $shadow-background: linear-gradient(
 
 .background-our-team {
   background: $background-button-color;
-  min-width: 100vw;
+  min-width: 100%;
 }
 
 // media to mobile
