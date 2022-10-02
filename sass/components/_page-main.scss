@@ -18,9 +18,7 @@ $shadow-background: linear-gradient(
 // media to mobile
 .background-heading {
   background-color: rgba(47, 48, 58, 0.4);
-  @media (min-device-pixel-ratio: 1), (min-resolution: 96dpi), (min-resolution: 1dppx) {
-    background-image: $shadow-background, url("../images/img_index/mobile_background@1x.jpg");
-  }
+  background-image: $shadow-background, url("../images/img_index/mobile_background@1x.jpg");
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: $shadow-background, url("../images/img_index/mobile_background@2x.jpg");
   }
@@ -67,9 +65,7 @@ $shadow-background: linear-gradient(
 @media screen and (min-width: 768px) {
   .background-heading {
     background-color: rgba(47, 48, 58, 0.4);
-    @media (min-device-pixel-ratio: 1), (min-resolution: 96dpi), (min-resolution: 1dppx) {
-      background-image: $shadow-background, url("../images/img_index/tablet_background@1x.jpg");
-    }
+    background-image: $shadow-background, url("../images/img_index/tablet_background@1x.jpg");
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: $shadow-background, url("../images/img_index/tablet_background@2x.jpg");
     }
@@ -83,9 +79,7 @@ $shadow-background: linear-gradient(
 @media screen and (min-width: 1200px) {
   .background-heading {
     background-color: rgba(47, 48, 58, 0.4);
-    @media (min-device-pixel-ratio: 1), (min-resolution: 96dpi), (min-resolution: 1dppx) {
-      background-image: $shadow-background, url("../images/img_index/desktop_background@1x.jpg");
-    }
+    background-image: $shadow-background, url("../images/img_index/desktop_background@1x.jpg");
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: $shadow-background, url("../images/img_index/desktop_background@2x.jpg");
     }
@@ -216,7 +210,6 @@ $shadow-background: linear-gradient(
 .background-our-team {
   background: $background-button-color;
   min-width: 100vw;
-  // margin: auto;
 }
 
 // media to mobile
@@ -234,6 +227,9 @@ $shadow-background: linear-gradient(
     justify-content: center;
     gap: 30px;
     margin-top: 30px;
+    &--size {
+      width: 100%;
+    }
     & > :nth-child(n) {
       min-width: 450px;
       box-sizing: border-box;
