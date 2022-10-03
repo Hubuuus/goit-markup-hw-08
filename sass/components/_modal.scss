@@ -171,18 +171,22 @@ input:not(:checked) + .check > svg {
 .close {
   position: absolute;
   box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 30px;
   width: 30px;
   right: 8px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   top: 8px;
   fill: $logo-second-color;
   cursor: pointer;
-  // transform: scale(1.1);
+  transform: scale(1.1);
+  fill: $logo-second-color;
+  transition: $transition-brand;
   &:hover,
   &:focus {
     fill: $brand-color;
-    transition: $transition-brand;
   }
 }
