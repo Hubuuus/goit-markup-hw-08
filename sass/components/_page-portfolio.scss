@@ -31,7 +31,8 @@ $site-fonts-roboto: "Roboto", sans-serif;
     cursor: pointer;
   }
   &__size {
-    // max-width: 450px;
+    min-width: 330px;
+    // box-sizing: border-box;
     width: 100vw;
   }
   &__text {
@@ -93,7 +94,7 @@ $site-fonts-roboto: "Roboto", sans-serif;
   box-sizing: border-box;
   position: absolute;
   bottom: 85px; /*nie wiem czemu taka wartość*/
-  min-width: 100%;
+  max-width: 100%;
   height: calc(100% - 85px);
   overflow: hidden;
   &__text {
