@@ -16,17 +16,17 @@
   </head>
   <body>
     <header>
-      <div class="background-header">
-        <div class="container header-flex">
+      <div class="container background-header">
+        <div class="header-flex">
           <!-- <nav> -->
           <nav class="header-flex__nav-element">
             <a class="links header-flex__nav-element--links-web logo" href="index.html">
               <span> <span class="web-blue"> Web</span>Studio </span>
             </a>
-            <a class="links header-flex__nav-element--links-web" href="Agencja">Agencja</a>
-            <a class="links header-flex__nav-element--links-web underline" href="portfolio.html"
-              >Portfolio</a
+            <a class="links header-flex__nav-element--links-web underline" href="menu.html"
+              >Agencja</a
             >
+            <a class="links header-flex__nav-element--links-web" href="portfolio.html">Portfolio</a>
             <a class="links header-flex__nav-element--links-web" href="Kontakt">Kontakt</a>
           </nav>
           <!-- </nav> -->
@@ -48,7 +48,12 @@
               >
             </li>
             <li>
-              <button type="menu" class="links header-flex__contact-element--mobile-menu">
+              <button
+                type="menu"
+                class="links header-flex__contact-element--mobile-menu js-open-menu menu-toggle"
+                aria-expanded="false"
+                aria-controls="mobile-menu"
+              >
                 <svg viewbox="0 0 1 1" height="40px">
                   <use href="images/icons.svg#icon-menu-icon"></use>
                 </svg>
@@ -317,79 +322,112 @@
         </section>
       </div>
     </main>
-    <div class="footer-background">
-      <div class="container">
-        <footer>
-          <ul class="not-dot footer">
-            <li class="footer__first-item">
-              <h4>
-                <a class="links logo logo--footer" href="index.html">
-                  <span class="web-blue">Web</span>Studio</a
-                >
-              </h4>
-              <address>
-                <ul class="not-dot contact">
-                  <li><a class="links contact__address">m. Warszawa, Aleje Jerozolimskie 21</a></li>
-                  <li>
-                    <a class="links contact__links" href="mailto:info@example.com"
-                      >info@example.com</a
-                    >
-                  </li>
-                  <li>
-                    <a class="links contact__links" href="tel:+48111111111">+48 111 111 111</a>
-                  </li>
-                </ul>
-              </address>
-            </li>
-            <li class="footer__second-item">
-              <h4 class="footer-heading">DOŁĄCZ DO NAS</h4>
-              <ul class="not-dot under-our-team__item">
-                <li class="icon-social icon-social-footer">
-                  <svg height="20px" width="20px">
-                    <use href="images\icons.svg#icon-instagram"></use>
-                  </svg>
+    <div class="container footer-background">
+      <footer class="container">
+        <ul class="not-dot footer">
+          <li class="footer__first-item">
+            <h4>
+              <a class="links logo logo--footer" href="index.html">
+                <span class="web-blue">Web</span>Studio</a
+              >
+            </h4>
+            <address>
+              <ul class="not-dot contact">
+                <li><a class="links contact__address">m. Warszawa, Aleje Jerozolimskie 21</a></li>
+                <li>
+                  <a class="links contact__links" href="mailto:info@example.com"
+                    >info@example.com</a
+                  >
                 </li>
-                <li class="icon-social icon-social-footer">
-                  <svg height="20px" width="20px">
-                    <use href="images\icons.svg#icon-twitter"></use>
-                  </svg>
-                </li>
-                <li class="icon-social icon-social-footer">
-                  <svg height="20px" width="20px">
-                    <use href="images\icons.svg#icon-facebook"></use>
-                  </svg>
-                </li>
-                <li class="icon-social icon-social-footer">
-                  <svg height="20px" width="20px">
-                    <use href="images\icons.svg#icon-linkedin"></use>
-                  </svg>
+                <li>
+                  <a class="links contact__links" href="tel:+48111111111">+48 111 111 111</a>
                 </li>
               </ul>
+            </address>
+          </li>
+          <li class="footer__second-item">
+            <h4 class="footer-heading">DOŁĄCZ DO NAS</h4>
+            <ul class="not-dot under-our-team__item">
+              <li class="icon-social icon-social-footer">
+                <svg height="20px" width="20px">
+                  <use href="images\icons.svg#icon-instagram"></use>
+                </svg>
+              </li>
+              <li class="icon-social icon-social-footer">
+                <svg height="20px" width="20px">
+                  <use href="images\icons.svg#icon-twitter"></use>
+                </svg>
+              </li>
+              <li class="icon-social icon-social-footer">
+                <svg height="20px" width="20px">
+                  <use href="images\icons.svg#icon-facebook"></use>
+                </svg>
+              </li>
+              <li class="icon-social icon-social-footer">
+                <svg height="20px" width="20px">
+                  <use href="images\icons.svg#icon-linkedin"></use>
+                </svg>
+              </li>
+            </ul>
+          </li>
+          <li class="footer__third-item">
+            <h4 class="footer-heading">ZAPISZ SIĘ DO NEWSLETTERA</h4>
+            <form class="footer-form">
+              <label class="footer-form__submit">
+                <input
+                  class="footer-form__submit--input"
+                  type="email"
+                  name="email"
+                  placeholder="E-mail"
+                  required
+                />
+                <button class="button footer-form__submit--button" type="submit">
+                  Zapisz się
+                  <svg viewBox="0 0 30 30" height="24px" width="24px">
+                    <use href="images\icons.svg#icon-icon-send"></use>
+                  </svg>
+                </button>
+              </label>
+            </form>
+          </li>
+        </ul>
+      </footer>
+    </div>
+    <div class="mobile-container js-menu-container">
+      <div class="container">
+        <div class="menu-container__close--position">
+          <button class="menu-container__close">
+            <svg class="menu-toggle js-close-menu" viewBox="0 0 40 40" height="24px" width="24px">
+              <use href="images\icons.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+        <nav class="menu-container__nav">
+          <a class="links menu-container__nav--links" href="index.html">Agencja</a>
+          <a class="links menu-container__nav--links" href="portfolio.html">Portfolio</a>
+          <a class="links menu-container__nav--links" href="Kontakt">Kontakt</a>
+        </nav>
+        <div class="interval">
+          <ul class="menu-container__contact">
+            <li class="links">
+              <a class="links menu-container__contact--mail" href="mailto:info@devstudio.com">
+                info@devstudio.com</a
+              >
             </li>
-            <li class="footer__third-item">
-              <h4 class="footer-heading">ZAPISZ SIĘ DO NEWSLETTERA</h4>
-              <form class="footer-form">
-                <label class="footer-form__submit">
-                  <input
-                    class="footer-form__submit--input"
-                    type="email"
-                    name="email"
-                    placeholder="E-mail"
-                    required
-                  />
-                  <button class="button footer-form__submit--button" type="submit">
-                    Zapisz się
-                    <svg viewBox="0 0 30 30" height="24px" width="24px">
-                      <use href="images\icons.svg#icon-icon-send"></use>
-                    </svg>
-                  </button>
-                </label>
-              </form>
+            <li class="links menu-container__contact--tel-position">
+              <a class="menu-container__contact--tel" href="tel:+48111111111"> +48 111 111 111</a>
             </li>
           </ul>
-        </footer>
+          <ul class="menu-container__social">
+            <li class="menu-container__social--text dash">Instagram</li>
+            <li class="menu-container__social--text dash">Twitter</li>
+            <li class="menu-container__social--text dash">Facebook</li>
+            <li class="menu-container__social--text dash">Linkedin</li>
+          </ul>
+        </div>
       </div>
     </div>
     <script src="./js/mobile-menujs"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

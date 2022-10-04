@@ -901,6 +901,8 @@ img {
           box-sizing: border-box;
   height: 609px;
   max-width: 450px;
+  min-width: 330px;
+  width: 100vw;
   padding: 40px;
   background-color: #ffffff;
   border-radius: 4px;
@@ -947,7 +949,7 @@ img {
 .modal__input {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 370px;
+  max-width: 370px;
   min-height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -961,7 +963,7 @@ img {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   min-height: 120px;
-  width: 370px;
+  max-width: 370px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding: 12px;
@@ -1001,6 +1003,8 @@ img {
   .modal {
     height: 581px;
     max-width: 528px;
+    min-width: 330px;
+    width: 100vw;
   }
   .modal__label:hover, .modal__label:focus {
     color: #757575;
@@ -1320,7 +1324,7 @@ input:not(:checked) + .check > svg {
   cursor: pointer;
 }
 .img-section__size {
-  width: 450px;
+  width: 100vw;
 }
 .img-section__text {
   position: relative;
@@ -1335,7 +1339,7 @@ input:not(:checked) + .check > svg {
   -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1215686275);
           box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1215686275);
   padding-bottom: 20px;
-  width: 450px;
+  max-width: 450px;
 }
 .img-section__text:hover .roll-up__text {
   position: absolute;
@@ -1358,18 +1362,21 @@ input:not(:checked) + .check > svg {
     margin-top: 30px;
   }
   .img-section__size {
-    width: 354px;
+    width: 100vw;
   }
   .img-section__text {
-    width: 354px;
+    max-width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
   .img-section {
     margin-top: 50px;
   }
+  .img-section__size {
+    max-width: 370px;
+  }
   .img-section__text {
-    width: 370px;
+    max-width: 370px;
   }
 }
 .roll-up {
@@ -1384,7 +1391,7 @@ input:not(:checked) + .check > svg {
 .roll-up__text {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 100%;
+  max-width: 100%;
   height: 100%;
   padding: 49px 24px;
   font-family: "Roboto", sans-serif;
