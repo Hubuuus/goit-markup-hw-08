@@ -379,11 +379,13 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   max-width: 450px;
+  min-width: 320px;
 }
 .lorem-section__icon--box {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   max-width: 450px;
+  min-width: 320px;
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
